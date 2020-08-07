@@ -1,6 +1,6 @@
 # TapTempo
 
-JavaScript-based online tool for defining a song's beats-per-minute rate.
+JavaScript-based online tool for defining a song's beats-per-minute rate, with responsive design.
 
 ## Built With
 
