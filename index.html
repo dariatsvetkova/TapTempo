@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en-ca" dir = "ltr">
+
+    <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174927733-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-174927733-1');
+        </script>
+
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>Tap Tempo - Online BPM Counter</title>
+        <meta name = "description" content = "Check the tempo of any song in BPM by simply tapping along with the beat.">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <script type = "text/javascript" src = "js/jquery-3.5.1.min.js"></script>
+        <script type = "text/javascript" src = "js/script.min.js" defer></script>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "css/style.min.css">
+
+    </head>
+
+    <body>
+        <header>
+            <a class="screen-reader-text" href="#tapping">Skip description to tapping</a>
+        </header>
+
+        <main>
+
+            <div class = "content-wrap">
+
+                <h1>Tap to define BPM</h1>
+
+                <article class = "intro">
+                    <p>To use this BPM counter, simply tap on the circle below along with the beat 
+                        and the tempo will automatically be defined in beats per minute (BPM).</p>
+                    <div class = "mob-hidden">
+                        <p>The result will be most precise after four taps. To clear the result and start again, press “Start over”.</p>
+                        <p>The counter will automatically stop if you don’t tap for over a minute. If you wish to continue after that, press “Start over” and start tapping again.</p>
+                    </div><!-- .mob-hidden -->
+                </article>
+
+                <div class = "instruction" id = "tapping">
+                    <h2>Tap below</h2>
+                    <p><span id = "desktop-instruction">or press any key </span>along with the beat</p>
+                </div>
+
+                <figure class="tapping-area">
+                    <svg xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 160 160">
+                        <circle id = "tapping-shadow" cx="80" cy="80" r="75"></circle>
+                        <circle id = "tapping-button" cx="75" cy="75" r="75"></circle>
+                    </svg>
+                </figure>
+
+                <div class = "result">
+                    <span>Your BPM: </span><span class = "result-bpm"></span>
+                </div>
+
+                <div class = "reset-alert">
+                    <p class = "hide">Counter stopped due to inactivity</p>
+                </div>
+
+                <button class = "reset-button">
+                    Start over
+                </button>
+
+            </div><!-- .content-wrap-->
+
+        </main>
+
+        <footer>
+            <small>&copy Daria Tsvetkova 2020</small>
+            <div class = "support-button">
+                <script type = 'text/javascript' src = 'https://ko-fi.com/widgets/widget_2.js'></script>
+                <script type = 'text/javascript'>kofiwidget2.init('Support project', '#259CE0', 'Z8Z5202TG');kofiwidget2.draw();</script>
+            </div>
+        </footer>
+    </body>
+</html>
