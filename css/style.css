@@ -202,6 +202,10 @@ a {
   color: var(--TT-blue-1);
 }
 
+footer a {
+  color: var(--TT-grey-2);
+}
+
 a:hover,
 a:focus {
   color: var(--TT-blue-2);
