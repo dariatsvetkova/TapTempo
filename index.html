@@ -94,17 +94,12 @@
     </main>
 
     <footer>
-      <small>&copy Daria Tsvetkova 2020</small>
-      <div class="support-button">
-        <script
-          type="text/javascript"
-          src="https://ko-fi.com/widgets/widget_2.js"
-        ></script>
-        <script type="text/javascript">
-          kofiwidget2.init("Support project", "#259CE0", "Z8Z5202TG");
-          kofiwidget2.draw();
-        </script>
-      </div>
-    </footer>
+      <small><a href="https://dariatsvetkova.ca/" target="_blank">&copy; Daria Tsvetkova, <span id="year" /></a></small>
+      </footer>
+      
+      <script type="text/javascript">
+        document.getElementById("year").innerHTML = (new Date).getFullYear();
+      </script>
+
   </body>
 </html>
